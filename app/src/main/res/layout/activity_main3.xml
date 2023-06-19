@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientblue"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/centerhorizontalline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/centerverticalline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"></RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/intro"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <android.widget.Button
+        android:id="@+id/standard"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="550dp"
+        android:background="@drawable/circlebutton2"
+        android:fontFamily="@font/raleway"
+        android:text="standard"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"></android.widget.Button>
+
+    <android.widget.Button
+        android:id="@+id/metric"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="215dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="550dp"
+        android:background="@drawable/circlebutton"
+        android:fontFamily="@font/raleway"
+        android:text="metric"
+        android:textColor="#040b42"
+        android:textSize="15sp"
+        android:textStyle="bold"></android.widget.Button>
+
+    <RelativeLayout
+        android:id="@+id/heightlayout"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/centerhorizontalline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/cardbackgroung">
+
+        <TextView
+            android:id="@+id/textHeight2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/height"
+            android:textAlignment="center"
+            android:textColor="#040b42"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textHeight1"
+            android:layout_marginLeft="90dp"
+            android:fontFamily="@font/raleway"
+            android:text="Ft"
+            android:textColor="#040b42"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textHeight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textHeight2"
+            android:layout_marginLeft="50dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#040b42"
+            android:ems="2"
+            android:fontFamily="@font/raleway"
+            android:maxLength="3"
+            android:text="@string/metricfeet"
+            android:textAlignment="center"
+            android:textColor="#040b42"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textHeight1"
+            android:layout_marginLeft="235dp"
+            android:fontFamily="@font/raleway"
+            android:text="In"
+            android:textColor="#040b42"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/textHeight3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textHeight2"
+            android:layout_marginLeft="195dp"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#040b42"
+            android:ems="2"
+            android:fontFamily="@font/raleway"
+            android:maxLength="3"
+            android:text="@string/metricinch"
+            android:textAlignment="center"
+            android:textColor="#040b42"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/calculatebmi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/circlebutton"
+        android:fontFamily="@font/raleway"
+        android:text="@string/calculate_your_bmi"
+        android:textColor="#040b42"
+        android:textSize="15sp"
+        android:textStyle="bold">
+    </android.widget.Button>
+
+    <RelativeLayout
+        android:id="@+id/weight"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/heightlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/centerverticalline"
+        android:background="@drawable/cardbackgroung">
+
+        <TextView
+            android:id="@+id/textweight1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/weight"
+            android:textAlignment="center"
+            android:textColor="#040b42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus"/>
+
+        <EditText
+            android:id="@+id/textWeight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#040b42"
+            android:ems="2"
+            android:fontFamily="@font/raleway"
+            android:maxLength="3"
+            android:text="@string/metricweight"
+            android:textAlignment="center"
+            android:textColor="#040b42"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/raleway"
+            android:text="lb"
+            android:textColor="#040b42"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Age"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/heightlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/centerverticalline"
+        android:background="@drawable/cardbackgroung">
+
+        <TextView
+            android:id="@+id/textage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/raleway"
+            android:text="@string/age"
+            android:textAlignment="center"
+            android:textColor="#040b42"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/plusminus"/>
+
+        <EditText
+            android:id="@+id/textAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#040b42"
+            android:ems="2"
+            android:fontFamily="@font/raleway"
+            android:maxLength="3"
+            android:text="@string/textAge"
+            android:textAlignment="center"
+            android:textColor="#040b42"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
